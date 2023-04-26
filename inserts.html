@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ <style>
+   input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .nav{
+    background-color: darkred;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  a{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px ;
+    text-decoration: none;
+  }
+  a:hover{
+    color: lightskyblue;
+  }
+ </style>
+ <body style="background: lightskyblue;">
+  <div class="nav"style="margin:0; margin-bottom: 20px;">
+<nav>
+      <a href="inserts.php" class="navlink">INSERTAR BD</a>
+      <a href="despliegue.php" class="navlink">LEER BD</a>
+      <a href="borradod.php" class="navlink">BORRAR</a>
+      <a href="recuperadod.php" class="navlink">RECUPERAR</a>
+      <a href="busquedad.php" class="navlink">BUSCAR</a>
+    </nav>
+
+    </div>
+  <h3>Pantalla de Captura de Datos.</h3>
+
+  <div>
+   <form action="inserts.php" METHOD=post>
+     <label for="lnombre">NOMBRE</label>
+     <input type="text" name="NOMBRE" placeholder="Escribe tu nombre..">
+
+     <label for="ledad">EDAD</label>
+     <input type="text" name="EDAD" placeholder="Escribe tu edad..">
+
+     <label for="lestatura">ESTATURA</label>
+     <input type=text name=ESTATURA>
+  
+     <INPUT TYPE=submit NAME="OK" VALUE="insertar"><BR>
+   </form>
+
+  </div>
+
+ </body>
+</html>
+
